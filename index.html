@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vitabars: barras nutritivas hechas con ingredientes reales. Compra por WhatsApp o paga online con Culqi." />
+  <title>Vitabars | Energía real para tu día</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="brand.css" />
+</head>
+<body>
+  <div class="announcement">Envío gratis en Lima por compras mayores a S/ 80 <span>•</span> Ingredientes reales, energía que se siente</div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Vitabars, inicio">
+      <img class="brand-logo" src="assets/logo.png" alt=""><span>VITA<strong>BARS</strong></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#productos">Productos</a>
+      <a href="#beneficios">Por qué Vitabars</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn user-trigger" aria-label="Ingresar a mi cuenta" title="Mi cuenta">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg>
+      </button>
+      <button class="icon-btn cart-trigger" aria-label="Abrir carrito" title="Carrito">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h15l-2 8H8L6 3H3M9 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+      <button class="menu-btn" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">SNACKS QUE SUMAN</p>
+        <h1>Energía real.<br><em>Sin complicaciones.</em></h1>
+        <p class="hero-text">Barras nutritivas hechas con ingredientes que reconoces. Deliciosas, prácticas y listas para acompañar tu ritmo.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-dark" href="#productos">Comprar ahora <span>→</span></a>
+          <button class="btn btn-light whatsapp-general">Pedir por WhatsApp</button>
+        </div>
+        <div class="hero-proof">
+          <div class="avatars"><span>VA</span><span>MI</span><span>LU</span></div>
+          <p><strong>4.9/5</strong> por más de 500 clientes felices</p>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Selección de barras Vitabars">
+        <div class="sun"></div>
+        <img class="hero-product hero-product-one" src="assets/saldemaras_y_chocolate.png" alt="Vitabar Sal de Maras y Chocolate">
+        <img class="hero-product hero-product-two" src="assets/menta_y_chocolate.png" alt="Vitabar Menta y Chocolate">
+        <img class="hero-product hero-product-three" src="assets/cacao_y_cashew.png" alt="Vitabar Cacao y Cashew">
+        <p class="visual-note">Alimento hecho barra<br><strong>Energía natural, hecha con corazón</strong></p>
+      </div>
+    </section>
+
+    <section class="benefit-strip" id="beneficios">
+      <div><span>✦</span><p><strong>Ingredientes reales</strong><small>Sin nombres extraños</small></p></div>
+      <div><span>⚡</span><p><strong>Energía que dura</strong><small>Para tu ritmo diario</small></p></div>
+      <div><span>♡</span><p><strong>Hecho con intención</strong><small>Nutrición y sabor</small></p></div>
+      <div><span>♻</span><p><strong>Empaque consciente</strong><small>Menor impacto</small></p></div>
+    </section>
+
+    <section class="products-section" id="productos">
+      <div class="section-heading">
+        <div><p class="eyebrow">ENCUENTRA TU FAVORITA</p><h2>Una barra para cada momento</h2></div>
+        <p>Desde un desayuno con prisa hasta ese empujón de media tarde. Elige tu sabor y arma tu pack.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filtrar productos">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="proteina">Alta proteína</button>
+        <button class="filter" data-filter="whey">ISO Whey</button>
+        <button class="filter" data-filter="superfoods">Superfoods</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="story" id="nosotros">
+      <div class="story-art"><img src="assets/mama_hija.png" alt="Fundadoras de Vitabars, madre e hija"><p>Madre e hija<br><strong>el alma de Vitabars</strong></p></div>
+      <div class="story-copy">
+        <p class="eyebrow">NUESTRA HISTORIA</p>
+        <h2>Alimento hecho barra, con consciencia y corazón.</h2>
+        <p>Vitabars es una marca creada por madre e hija, con 18 años de experiencia e investigación aplicada en la cocina. Elaboramos barras nutritivas con superalimentos, nueces y semillas para acompañarte con energía natural.</p>
+        <div class="story-stats"><div><strong>18</strong><span>años de experiencia</span></div><div><strong>6</strong><span>sabores disponibles</span></div><div><strong>♡</strong><span>elaboración consciente</span></div></div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div><p class="eyebrow">¿LISTO PARA PROBARLAS?</p><h2>Tu próxima barra favorita está aquí.</h2></div>
+      <a href="#productos" class="btn btn-cream">Ver productos →</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><a class="brand" href="#inicio"><img class="brand-logo" src="assets/logo.png" alt=""><span>VITA<strong>BARS</strong></span></a><p>El sabor natural de la proteína.</p><p><a href="https://www.instagram.com/vitabars.pe" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@vitabars.pe" target="_blank" rel="noopener">TikTok</a></p></div>
+    <div><h3>Explora</h3><a href="#productos">Productos</a><a href="#beneficios">Beneficios</a><a href="#nosotros">Nosotros</a></div>
+    <div><h3>Ayuda y legal</h3><a href="#" class="whatsapp-general">Contáctanos</a><a href="cambios-devoluciones.html">Envíos, cambios y devoluciones</a><a href="terminos.html">Términos y condiciones</a><a href="privacidad.html">Política de privacidad</a><a href="libro-reclamaciones.html">Libro de Reclamaciones</a></div>
+    <div><h3>Recibe novedades</h3><p>Ofertas, lanzamientos y tips sin spam.</p><form class="newsletter"><input type="email" placeholder="tu@email.com" required aria-label="Correo electrónico"><button aria-label="Suscribirme">→</button></form></div>
+    <p class="copyright">© 2026 Vitabars · Para Ellas S.A.C. · RUC 20600582802 · Calle Los Osos Nro. 435, Urb. Rinconada del Lago Etapa, La Molina, Lima, Perú.</p>
+  </footer>
+
+  <div class="overlay" hidden></div>
+
+  <aside class="drawer cart-drawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">TU PEDIDO</p><h2>Mi carrito</h2></div><button class="close-drawer" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items"></div>
+    <div class="empty-cart"><span>⌁</span><h3>Tu carrito está esperando</h3><p>Agrega algunas Vitabars y vuelve por aquí.</p><button class="btn btn-dark close-drawer">Ver productos</button></div>
+    <div class="cart-summary" hidden>
+      <label class="delivery-choice"><input type="checkbox" id="delivery-toggle"><span><strong>Quiero delivery</strong><small>S/ 10 · Gratis desde S/ 100</small></span></label>
+      <div class="summary-line"><span>Subtotal</span><strong class="subtotal">S/ 0.00</strong></div>
+      <div class="summary-line delivery-line"><span>Delivery</span><strong class="delivery-cost">S/ 0.00</strong></div>
+      <div class="summary-line total-line"><span>Total</span><strong class="cart-total">S/ 0.00</strong></div>
+      <button class="btn btn-whatsapp checkout-whatsapp">Comprar por WhatsApp</button>
+      <button class="btn btn-dark checkout-online">Pagar online con Culqi</button>
+      <p class="payment-note">Pago seguro con tarjeta, débito o Yape</p>
+    </div>
+  </aside>
+
+  <section class="modal auth-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <button class="modal-close" aria-label="Cerrar">×</button>
+    <div class="modal-brand"><img class="brand-logo" src="assets/logo.png" alt="Vitabars"></div>
+    <p class="eyebrow">BIENVENIDO A VITABARS</p><h2 id="auth-title">Tu cuenta, tus favoritos.</h2>
+    <p class="modal-intro">Ingresa para guardar tus datos y comprar más rápido.</p>
+    <form class="auth-form">
+      <label>Correo electrónico<input type="email" id="auth-email" placeholder="tu@email.com" required></label>
+      <label>Contraseña<input type="password" placeholder="Mínimo 6 caracteres" minlength="6" required></label>
+      <button class="btn btn-dark" type="submit">Ingresar</button>
+    </form>
+    <p class="auth-switch">¿Primera vez? <button type="button">Crear una cuenta</button></p>
+    <p class="demo-note">Demo: el acceso se guarda únicamente en este dispositivo.</p>
+  </section>
+
+  <section class="modal payment-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="payment-title">
+    <button class="modal-close" aria-label="Cerrar">×</button>
+    <p class="eyebrow">CHECKOUT SEGURO</p><h2 id="payment-title">¿Cómo quieres pagar?</h2>
+    <p class="modal-intro">Serás dirigido al enlace seguro de Culqi para completar el pago.</p>
+    <div class="payment-total-box"><span>Total de tu pedido</span><strong class="payment-total">S/ 0.00</strong><button type="button" class="copy-total">Copiar monto</button></div>
+    <p class="culqi-amount-note">El enlace Express actual no recibe el carrito automáticamente. Ingresa en Culqi el monto que aparece arriba.</p>
+    <div class="payment-options">
+      <button data-method="Tarjeta de crédito o débito"><span class="pay-icon">▣</span><span><strong>Tarjeta</strong><small>Crédito o débito</small></span><b>›</b></button>
+      <button data-method="Yape"><span class="pay-icon yape">Y</span><span><strong>Yape</strong><small>Pago desde tu celular</small></span><b>›</b></button>
+    </div>
+    <p class="secure-note">🔒 Vitabars no almacena los datos de tu tarjeta.</p>
+  </section>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <a class="floating-whatsapp whatsapp-general" href="#" aria-label="Comprar por WhatsApp">W</a>
+  <script src="app.js"></script>
+</body>
+</html>

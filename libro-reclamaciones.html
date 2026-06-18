@@ -1,0 +1,28 @@
+<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Libro de Reclamaciones | Vitabars</title><link rel="stylesheet" href="legal.css"></head><body>
+<header class="legal-header"><a class="legal-brand" href="index.html"><img src="assets/logo.png" alt="">VITABARS</a><a class="back-link" href="index.html">← Volver a la tienda</a></header>
+<section class="legal-hero"><div><small>LIBRO DE RECLAMACIONES VIRTUAL</small><h1>Registra tu reclamo o queja</h1><p>Para Ellas S.A.C. · RUC 20600582802</p></div></section>
+<main class="legal-content"><div class="company-card"><strong>Razón social:</strong> Para Ellas S.A.C.<br><strong>Nombre comercial:</strong> Vitabars<br><strong>RUC:</strong> 20600582802<br><strong>Dirección:</strong> Calle Los Osos Nro. 435, Urb. Rinconada del Lago Etapa, La Molina, Lima, Perú.<br><strong>Teléfono:</strong> +51 947 227 596<br><strong>Correo:</strong> vitabarsperu@gmail.com</div>
+<div class="notice"><strong>Reclamo:</strong> disconformidad relacionada con productos o servicios. <strong>Queja:</strong> malestar respecto de la atención, no directamente relacionado con el producto o servicio. La presentación no impide acudir a otras vías ni constituye requisito previo.</div>
+<form class="claims-form" action="https://formsubmit.co/vitabarsperu@gmail.com" method="POST">
+  <h2>Hoja de Reclamación</h2>
+  <input type="hidden" name="_subject" value="Nueva Hoja de Reclamación - Vitabars"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="hidden" name="_autoresponse" value="Vitabars recibió tu Hoja de Reclamación. Conserva este correo como constancia. Nos comunicaremos contigo dentro del plazo legal aplicable."><input type="hidden" name="Código" id="claim-id">
+  <p class="claim-code full">Código de registro: <span id="claim-code"></span></p>
+  <label>Fecha<input type="date" name="Fecha" id="claim-date" required></label><label>Tipo<select name="Tipo" required><option value="">Selecciona</option><option>Reclamo</option><option>Queja</option></select></label>
+  <label>Nombres y apellidos<input name="Consumidor" autocomplete="name" required></label><label>Tipo de documento<select name="Tipo de documento" required><option value="">Selecciona</option><option>DNI</option><option>CE</option><option>Pasaporte</option></select></label>
+  <label>Número de documento<input name="Número de documento" required></label><label>Correo electrónico<input type="email" name="email" autocomplete="email" required></label>
+  <label>Teléfono<input type="tel" name="Teléfono" autocomplete="tel" required></label>
+  <label class="full">Domicilio<input name="Domicilio" autocomplete="street-address" required></label>
+  <label>¿Es menor de edad?<select name="Menor de edad" id="minor"><option>No</option><option>Sí</option></select></label><label>Padre, madre o representante<input name="Representante" id="representative"></label>
+  <h2>Producto o servicio</h2>
+  <label>Tipo<select name="Bien contratado" required><option>Producto</option><option>Servicio</option></select></label><label>Monto reclamado (S/)<input type="number" name="Monto reclamado" min="0" step="0.01"></label>
+  <label class="full">Producto o servicio relacionado<input name="Producto o servicio" required></label><label class="full">Detalle del reclamo o queja<textarea name="Detalle" required></textarea></label><label class="full">Pedido concreto del consumidor<textarea name="Pedido del consumidor" required></textarea></label>
+  <h2>Declaración y firma</h2>
+  <label class="full">Firma del consumidor (escribe tus nombres y apellidos)<input name="Firma del consumidor" required></label>
+  <label class="check full"><input type="checkbox" required><span>Declaro que los datos proporcionados son verdaderos, confirmo mi pedido y firma electrónica, y acepto el tratamiento necesario para atender esta solicitud conforme a la Política de Privacidad.</span></label>
+  <input type="hidden" name="Estado de respuesta" value="Pendiente de evaluación por Para Ellas S.A.C."><input type="hidden" name="Plazo máximo informado" value="30 días calendario"><input type="hidden" name="Firma del proveedor" value="Será consignada por el representante autorizado al emitir la respuesta"><input type="hidden" name="Medidas adoptadas" value="Pendientes de evaluación y respuesta">
+  <button type="submit">Enviar Hoja de Reclamación</button>
+</form>
+<section class="company-response"><h2>Respuesta de la empresa</h2><p>Para Ellas S.A.C. evaluará lo registrado y enviará al correo del consumidor su respuesta, las medidas adoptadas y la identificación del representante autorizado. El plazo máximo informado para responder es de 30 días calendario.</p></section>
+<div class="notice"><strong>Activación inicial:</strong> la primera vez que se envíe este formulario, FormSubmit enviará un mensaje de verificación a vitabarsperu@gmail.com. Debes abrirlo y confirmar para comenzar a recibir las hojas.</div></main>
+<footer class="legal-footer">Para Ellas S.A.C. · RUC 20600582802 · <a href="index.html">Vitabars</a></footer>
+<script>const now=new Date();const code=`VIT-${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}-${Math.random().toString(36).slice(2,8).toUpperCase()}`;document.querySelector('#claim-code').textContent=code;document.querySelector('#claim-id').value=code;document.querySelector('#claim-date').value=now.toISOString().slice(0,10);document.querySelector('#minor').addEventListener('change',e=>document.querySelector('#representative').required=e.target.value==='Sí');</script></body></html>

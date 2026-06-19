@@ -67,6 +67,8 @@ renderProducts();renderCart();
 $$('.filter').forEach(btn=>btn.onclick=()=>{$$('.filter').forEach(x=>x.classList.remove('active'));btn.classList.add('active');renderProducts(btn.dataset.filter)});
 $('.cart-trigger').onclick=()=>openPanel($('.cart-drawer'));
 $('.user-trigger').onclick=()=>openPanel($('.auth-modal'));
+$('.menu-btn').onclick=()=>{$('nav').classList.toggle('mobile-open');$('.menu-btn').textContent=$('nav').classList.contains('mobile-open')?'×':'☰'};
+$$('nav a').forEach(link=>link.onclick=()=>{$('nav').classList.remove('mobile-open');$('.menu-btn').textContent='☰'});
 $$('.close-drawer,.modal-close').forEach(b=>b.onclick=closePanels);$('.overlay').onclick=closePanels;
 $$('.whatsapp-general').forEach(a=>a.onclick=e=>{e.preventDefault();openWhatsapp()});
 $('.checkout-whatsapp').onclick=()=>openWhatsapp(cartText());

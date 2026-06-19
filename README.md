@@ -8,7 +8,7 @@ En `app.js`, al inicio, reemplaza:
 
 ```js
 const CONFIG = {
-  whatsapp: '51999999999',
+  whatsapp: '51947227596',
   culqiPaymentLink: 'https://express.culqi.com/pago/F7BA793F86'
 };
 ```

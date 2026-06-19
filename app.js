@@ -5,12 +5,12 @@ const CONFIG = {
 };
 
 const products = [
-  {id:1,name:'Sal de Maras & Chocolate',desc:'Barra proteica Plant-Based · 10 g proteína vegetal',price:13.50,color:'#d77b86',bg:'#f5e4e6',badge:'PLANT-BASED',category:'proteina',image:'assets/saldemaras_y_chocolate.png'},
-  {id:2,name:'Menta & Chocolate',desc:'Barra proteica ISO Whey · 12 g de proteína',price:13.50,color:'#7baa84',bg:'#e3f0df',badge:'ISO WHEY',category:'whey',image:'assets/menta_y_chocolate.png'},
-  {id:3,name:'Maca, Lúcuma & Cacao',desc:'Barra nutricional Superfoods · 10 g proteína vegetal',price:12.50,color:'#986941',bg:'#f3dfce',badge:'SUPERFOODS',category:'superfoods',image:'assets/maca_lucuma_y_cacao.png'},
-  {id:4,name:'Mini Lúcuma & Maní',desc:'Barra mini proteica · 7 g de proteína vegetal',price:8.50,color:'#79513d',bg:'#eadde0',badge:'FORMATO MINI',category:'proteina',image:'assets/lucuma_y_mani.png'},
-  {id:5,name:'Cacao & Cashew',desc:'Barra proteica Plant-Based · 10 g proteína vegetal',price:13.50,color:'#71815c',bg:'#e4ead7',badge:'PLANT-BASED',category:'proteina',image:'assets/cacao_y_cashew.png'},
-  {id:6,name:'Lúcuma & Maní',desc:'Barra proteica ISO Whey · formato 73 g',price:13.50,color:'#c1b566',bg:'#f1edcf',badge:'ISO WHEY',category:'whey',image:'assets/lucuma_y_mani_73gr.png'}
+  {id:1,name:'Sal de Maras & Chocolate',desc:'Barra proteica Plant-Based · 10 g proteína vegetal',price:13.50,color:'#d77b86',bg:'#f5e4e6',badge:'PLANT-BASED',category:'proteina',image:'saldemaras_y_chocolate.png'},
+  {id:2,name:'Menta & Chocolate',desc:'Barra proteica ISO Whey · 12 g de proteína',price:13.50,color:'#7baa84',bg:'#e3f0df',badge:'ISO WHEY',category:'whey',image:'menta_y_chocolate.png'},
+  {id:3,name:'Maca, Lúcuma & Cacao',desc:'Barra nutricional Superfoods · 10 g proteína vegetal',price:12.50,color:'#986941',bg:'#f3dfce',badge:'SUPERFOODS',category:'superfoods',image:'maca_lucuma_y_cacao.png'},
+  {id:4,name:'Mini Lúcuma & Maní',desc:'Barra mini proteica · 7 g de proteína vegetal',price:8.50,color:'#79513d',bg:'#eadde0',badge:'FORMATO MINI',category:'proteina',image:'lucuma_y_mani.png'},
+  {id:5,name:'Cacao & Cashew',desc:'Barra proteica Plant-Based · 10 g proteína vegetal',price:13.50,color:'#71815c',bg:'#e4ead7',badge:'PLANT-BASED',category:'proteina',image:'cacao_y_cashew.png'},
+  {id:6,name:'Lúcuma & Maní',desc:'Barra proteica ISO Whey · formato 73 g',price:13.50,color:'#c1b566',bg:'#f1edcf',badge:'ISO WHEY',category:'whey',image:'lucuma_y_mani_73gr.png'}
 ];
 
 let cart = JSON.parse(localStorage.getItem('vitabars_cart') || '[]');
